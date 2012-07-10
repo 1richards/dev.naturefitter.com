@@ -1,0 +1,8 @@
+filename = "NatureFitter-2012-06-29T07-50-42"
+description = ""
+datestamp = "1340970643"
+generator = "Backup and Migrate (http://drupal.org/project/backup_migrate)"
+generatorversion = "7.x-2.x"
+sites[0][version] = "7.14"
+sites[0][name] = "NatureFitter"
+sites[0][url] = "http://dev.naturefitter.com/"
