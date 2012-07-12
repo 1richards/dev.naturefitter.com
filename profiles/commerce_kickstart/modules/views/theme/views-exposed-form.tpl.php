@@ -59,12 +59,12 @@
       </div>
     <?php endif; ?>
     <?php if (!empty($offset)): ?>
-      <div class="views-exposed-widget views-widget-offset">
+      <div class=" views-widget-offset">
         <?php print $offset; ?>
       </div>
     <?php endif; ?>
-    <div class="views-exposed-widget views-submit-button">
-      <?php print $button; ?>
+    <div class="views-submit-button">
+      <button class="btn btn-large" id="edit-submit-locations-tags" name="" value="Start now" type="submit">Start now</button>
     </div>
     <?php if (!empty($reset_button)): ?>
       <div class="views-exposed-widget views-reset-button">
