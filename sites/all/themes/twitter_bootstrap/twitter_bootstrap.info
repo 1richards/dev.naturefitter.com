@@ -16,6 +16,12 @@ stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
 stylesheets[all][] = css/twitter_bootstrap.css
 
 scripts[] = bootstrap/js/bootstrap.js
+scripts[] = bootstrap/js/supersized.core.3.2.1.js
+scripts[] = misc/jquery.js
+scripts[] = https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js
+scripts[] = sites/all/themes/twitter_bootstrap/bootstrap/slideshow/js/jquery.easing.min.js
+scripts[] = sites/all/themes/twitter_bootstrap/bootstrap/slideshow/js/supersized.3.2.7.min.js
+scripts[] = sites/all/themes/twitter_bootstrap/bootstrap/slideshow/theme/supersized.shutter.min.js
 
 settings[toggle_name] = 0
 settings[toggle_search] = 1
@@ -23,7 +29,7 @@ settings[toggle_search] = 1
 ;Exclude
 ;javascript
 ;exclude[js][] = 'modules/contextual/contextual.js'
-;exclude[js][] = 'misc/jquery.js'
+
 
 ;css
 ;exclude[css][] = 'misc/vertical-tabs.css'

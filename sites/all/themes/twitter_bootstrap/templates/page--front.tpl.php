@@ -1,3 +1,39 @@
+		<link rel="stylesheet" href="sites/all/themes/twitter_bootstrap/bootstrap/slideshow/css/supersized.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="sites/all/themes/twitter_bootstrap/bootstrap/slideshow/theme/supersized.shutter.css" type="text/css" media="screen" />
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script type="text/javascript" src="sites/all/themes/twitter_bootstrap/bootstrap/slideshow/js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="sites/all/themes/twitter_bootstrap/bootstrap/slideshow/js/supersized.3.2.7.min.js"></script>
+		<script type="text/javascript" src="sites/all/themes/twitter_bootstrap/bootstrap/slideshow/theme/supersized.shutter.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slide_interval          :   5000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	700,		// Speed of transition
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					slides 					:  	[			// Slideshow Images
+														{image : 'sites/default/files/bg.jpg', title : 'Image Credit: Maria Kazvan', thumb : '', url : ''},
+														{image : 'sites/default/files/bg_mt_rainier.jpg', title : 'Image Credit: Walter Siegmund', thumb : '', url : ''},  
+														{image : 'sites/default/files/bg_bwca.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  
+														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+
+												]
+					
+				});
+		    });
+		    
+		</script>
+
+
 
   <!-- Navbar
     ================================================== -->
@@ -7,19 +43,19 @@
             <ul class="nav">
 			<li class=""><a class="brand" href="#">NatureFitter</a>
 			</li>
-              <li class="">
+              <li id="nav-locations">
                 <a href="#locations">Where to go</a>
               </li>
               <li class="divider-vertical" id="dividernav"></li>
-			  <li class="">
+			  <li id="nav-activities">
                 <a href="#activities">What to do</a>
               </li>
               <li class="divider-vertical" id="dividernav"></li>
-			  <li class="">
-                <a href="packages">Guidance when you get there</a>
+			  <li id="nav-packages">
+                <a href="#packages">Guidance when you get there</a>
               </li>
               </ul>
-                <ul class="nav pull-right">
+          <!--      <ul class="nav pull-right">
               <li class="divider-vertical" id="dividernav"></li>
 			  <li class="divider-vertical" id="dividernav"></li>
 			  <li class="" id="">
@@ -42,7 +78,7 @@
                 <a href="#myModal" data-toggle="modal">Get deals by email</a>
               </li>
               
-            </ul>
+            </ul>-->
           
             
           </div>
@@ -144,50 +180,31 @@
 
 
 
-<div class="container">
-
-  
-	
-	<div class="row">
-	  
-  
-	  
-	 
-
-	 
-  </div>
-  
-  
-  
-
 
 
 	
 <!-- Masthead
 ================================================== -->
-<div class="container">
-<div class="container"><div class="container hero-unit span10" id="heroUnit">
-<div class="row" id="logo"><a class="brand" href="#"> <img src="sites/default/files/img/NatureFitter_logo.png"></a></div>
-        <div class=" row">
-      	  <div class="span5 marketing" id="headerdiv">
-              <h1 id="header"><br>The Concierge <br>of the Outdoors</h1>
+
+<div class="container"><!--<div class="container hero-unit span10" id="heroUnit">-->
+<div class="row" id="logo"><a class="brand" href="#"> <img id="main-logo" src="sites/default/files/NatureFitter_logo.png"></a></div>
+      	  <div class=" marketing">
+              <h1 id="header"><br>The Concierge of the Outdoors</h1>
            
-		   <?php print render($page['content']); ?></div>
+		   <?php print '<div id="front-location-submit"' . render($page['content']) . '</div>'; ?>
 		       
 		        
 		        
 		        
+<!--Arrow Navigation-->
+	<a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
 		        
 		        
 		        
+		   </div>     
 		        
-		        
-		        
-		        
-		        
-             <div class="span4" id="headerImg">
-              <a href="#myModal" data-toggle="modal"><img class="thumbnail" src="sites/default/files/img/demo.jpg"></a>
-			</div>
+             
       </div> <br>
 	  
 			<ul class="quick-links" id="followus">
@@ -392,7 +409,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-    <script src="sites/default/files/js/jquery.js"></script>
     <script src="sites/default/files/js/google-code-prettify/prettify.js"></script>
     <script src="sites/default/files/js/bootstrap-transition.js"></script>
     <script src="sites/default/files/js/bootstrap-alert.js"></script>

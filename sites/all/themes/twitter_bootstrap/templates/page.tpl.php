@@ -65,7 +65,7 @@
       <?php if ($page['highlighted']): ?>
         <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if ($breadcrumb): print $breadcrumb; else: print '<div class="breadcrumb"><a href="/">Home</a> / <a href="/locations">Where to go</a></div>'; endif;?>
+      <?php if ($breadcrumb): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
