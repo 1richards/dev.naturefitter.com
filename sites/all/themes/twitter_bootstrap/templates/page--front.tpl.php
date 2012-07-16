@@ -21,10 +21,11 @@
 					// Components							
 					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 					slides 					:  	[			// Slideshow Images
-														{image : 'sites/default/files/bg.jpg', title : 'Image Credit: Maria Kazvan', thumb : '', url : ''},
-														{image : 'sites/default/files/bg_mt_rainier.jpg', title : 'Image Credit: Walter Siegmund', thumb : '', url : ''},  
-														{image : 'sites/default/files/bg_bwca.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  
 														{image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+														{image : 'sites/default/files/bg_mt_rainier.jpg', title : 'Image Credit: Walter Siegmund', thumb : '', url : ''},  
+														{image : 'sites/default/files/bg.jpg', title : 'Image Credit: Maria Kazvan', thumb : '', url : ''},
+														{image : 'sites/default/files/bg_bwca.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  
+														
 
 												]
 					
@@ -34,25 +35,26 @@
 		</script>
 
 
-
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
   <!-- Navbar
     ================================================== -->
-    <div class="navbar navbar-fixed-top">
+    <div class="navbar navbar-main">
       <div class="navbar-inner">
         <div class="container">
             <ul class="nav">
-			<li class=""><a class="brand" href="#">NatureFitter</a>
+			<li class=""><a class="brand" href="#"><img src="sites/default/files/logo_md.png"></a>
 			</li>
-              <li id="nav-locations">
-                <a href="#locations">Where to go</a>
+             <li class="divider-vertical" id="dividernav"></li>
+              <li class="nav-main-menu" id="nav-locations">
+                <a href="#locations"><h3>Where to go</h3></a>
               </li>
               <li class="divider-vertical" id="dividernav"></li>
-			  <li id="nav-activities">
-                <a href="#activities">What to do</a>
+			  <li class="nav-main-menu" id="nav-activities">
+                <a href="#activities"><h3>What to do</h3></a>
               </li>
               <li class="divider-vertical" id="dividernav"></li>
-			  <li id="nav-packages">
-                <a href="#packages">Guidance when you get there</a>
+			  <li class="nav-main-menu" id="nav-packages">
+                <a href="#vendors"><h3>Expert guidance</h3></a>
               </li>
               </ul>
           <!--      <ul class="nav pull-right">
@@ -186,10 +188,10 @@
 <!-- Masthead
 ================================================== -->
 
-<div class="container"><!--<div class="container hero-unit span10" id="heroUnit">-->
-<div class="row" id="logo"><a class="brand" href="#"> <img id="main-logo" src="sites/default/files/NatureFitter_logo.png"></a></div>
+
+<!--<div class="row" id="logo"><a class="brand" href="#"> <img id="main-logo" src="sites/default/files/NatureFitter_logo.png"></a></div>-->
       	  <div class=" marketing">
-              <h1 id="header"><br>The Concierge of the Outdoors</h1>
+              <h1 id="header"><br>The Concierge of the Outdoors</h1></div>
            
 		   <?php print '<div id="front-location-submit"' . render($page['content']) . '</div>'; ?>
 		       
@@ -202,10 +204,10 @@
 		        
 		        
 		        
-		   </div>     
+		        
 		        
              
-      </div> <br>
+     <br>
 	  
 			<ul class="quick-links" id="followus">
 			<li class="follow-btn">
@@ -215,16 +217,14 @@
 			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://naturefitter.com" data-count="horizontal" data-via="NatureFitter" data-related="mdo:Creator of NatureFitter.com">Tweet</a>
 			</li>
 			</ul>
-		</div> 
-</div>
-
+	
 		
 <!--End Masthead Section-->
 
 
 <!--Activities Section-->
 <hr class="soften hrdivider" id="locations">
-
+<div class="container span12" id="main-page-container">
 <div class="marketing" >
   <h1>Have somewhere in mind? Let's get this started.</h1>
   <p class="marketing-byline">If not, start with an <a href="#activities">activity</a> and we'll go from there.</p>
@@ -393,6 +393,7 @@
 </div>
 </div><!-- /.marketing -->
 
+
      <!-- Footer
       ================================================== -->
       <footer class="footer">
@@ -402,7 +403,7 @@
       </footer>
 
     </div><!-- /container -->
-
+</div>
 
 
     <!-- Le javascript
