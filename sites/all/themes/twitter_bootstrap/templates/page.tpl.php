@@ -1,47 +1,54 @@
-<header id="navbar" role="banner" class="navbar navbar-fixed-top">
-  <div class="navbar-inner">
-  	<div class="container">
-  	  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-  	  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-  		<span class="icon-bar"></span>
-  		<span class="icon-bar"></span>
-  		<span class="icon-bar"></span>
-  	  </a>
-  	  
-  	  <?php if ($logo): ?>
-    		<a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-    		  <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    		</a>
-  	  <?php endif; ?>
-
-  	  <?php if ($site_name || $site_slogan): ?>
-    		<hgroup id="site-name-slogan">
-    		  <?php if ($site_name): ?>
-    			<h1>
-    			  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="brand"><?php print $site_name; ?></a>
-    			</h1>
-    		  <?php endif; ?>
-    		</hgroup>
-  	  <?php endif; ?>
-  	  
-  	  <div class="nav-collapse">
-    	  <nav role="navigation">
-      		<?php if ($primary_nav): ?>
-      		  <?php print $primary_nav; ?>
-      		<?php endif; ?>
-      	  
-      		<?php if ($search): ?>
-      		  <?php if ($search): print render($search); endif; ?>
-      		<?php endif; ?>
-      		
-      		<?php if ($secondary_nav): ?>
-      		  <?php print $secondary_nav; ?>
-      		<?php endif; ?>
-    		</nav>
-  	  </div>         
-  	</div>
-  </div>
-</header>
+<!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-main">
+      <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav">
+			<li id="main-logo"><a class="brand" href="/"><img src="/sites/default/files/nf-rectangle_sm.png"></a>
+			</li>
+             <li class="divider-vertical" id="dividernav"></li>
+              <li class="nav-main-menu" id="nav-locations">
+                <a href="/locations"><h3>Where to go</h3></a>
+              </li>
+              <li class="divider-vertical" id="dividernav"></li>
+			  <li class="nav-main-menu" id="nav-activities">
+                <a href="/activities"><h3>What to do</h3></a>
+              </li>
+              <li class="divider-vertical" id="dividernav"></li>
+			  <li class="nav-main-menu" id="nav-packages">
+                <a href="/packages"><h3>Book a package</h3></a>
+              </li>
+              </ul>
+          <!--      <ul class="nav pull-right">
+              <li class="divider-vertical" id="dividernav"></li>
+			  <li class="divider-vertical" id="dividernav"></li>
+			  <li class="" id="">
+                <a href="user">Sign in</a>
+              </li>
+              <li class="divider-vertical" id="dividernav"></li>            
+              <li class="" id="">
+                <a href="user">Sign up</a>
+              </li>
+              
+            </ul>
+            <ul class="nav pull-right">
+              <li class="divider-vertical" id="dividernav"></li>
+			  
+			  <li class="" id="aboutnav">
+                <a href="#aboutUs" data-toggle="modal">About</a>
+              </li>
+              <li class="divider-vertical" id="dividernav"></li>            
+              <li class="" id="">
+                <a href="#myModal" data-toggle="modal">Get deals by email</a>
+              </li>
+              
+            </ul>-->
+          
+            
+         
+        </div>
+      </div>
+    </div>
 
 <div class="container">
 
@@ -65,7 +72,6 @@
       <?php if ($page['highlighted']): ?>
         <div class="highlighted hero-unit"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
-      <?php if ($breadcrumb): print $breadcrumb; endif;?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>

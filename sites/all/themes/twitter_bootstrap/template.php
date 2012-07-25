@@ -235,3 +235,14 @@ function _twitter_bootstrap_content_span($columns = 1) {
   
   return $class;
 }
+
+/**
+* Implements hook_preprocess_image
+
+function twitter_bootstrap_preprocess_image(&$variables) {
+    // If this image is of the type 'medium' then assign additional classes to it:
+    if ($variables['style_name'] == 'medium') {
+        $variables['attributes']['class'][] = 'thumbnail';
+    }
+}
+*/
