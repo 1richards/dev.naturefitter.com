@@ -12,19 +12,18 @@
 				$.supersized({
 				
 					// Functionality
-					slide_interval          :   5000,		// Length between transitions
+					slide_interval          :   6000,		// Length between transitions
 					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-					transition_speed		:	700,		// Speed of transition
+					transition_speed		:	1000,		// Speed of transition
 															   
 					// Components							
 					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 					slides 					:  	[			// Slideshow Images
 					
-					{image : 'sites/default/files/hiker-couple-hero.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  									
-					{image : 'sites/default/files/climber-hero.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  
-					{image : 'sites/default/files/hiker-hero.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-					{image : 'sites/default/files/tent-hero.jpg', title : 'Image Credit: Walter Siegmund', thumb : '', url : ''},  
-					{image : 'sites/default/files/bg_bwca.jpg', title : 'Image Credit: Reese Richards', thumb : '', url : ''},  							]
+					{image : 'sites/default/files/bg_1.jpg', title : '', thumb : '', url : ''},  									
+					{image : 'sites/default/files/glacier_lg.jpeg', title : '', thumb : '', url : ''},  
+
+					{image : 'sites/default/files/bg_bwca.jpg', title : '', thumb : '', url : ''},  							]
 					
 				});
 		    });
@@ -94,7 +93,7 @@
       	  <div class=" marketing">
               <h1 id="header"><br>Book an outdoor activity package.</h1></div>
            
-		   <?php print '<div id="front-location-submit-text">From multi-day adventures to relaxing day trips. <br>Start by picking a place to play.</div>
+		   <?php print '<div id="front-location-submit-text">Choose from multi-day adventures to relaxing day trips. <br>Start by picking a place to play.</div>
 		   <div id="front-location-submit">' . render($page['content']) . '</div>'; ?>
 	</div>	       
 		        

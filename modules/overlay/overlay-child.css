@@ -20,6 +20,7 @@ html.js body {
   padding-bottom: 2em;
   padding-right: 26px; /* LTR */
   width: 88%;
+  margin-top:55px;
 }
 #overlay-titlebar {
   padding: 0 20px;
